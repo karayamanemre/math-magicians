@@ -25,8 +25,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - To clone my repository run this command `git clone https://github.com/karayamanemre/math-magicians.git`
-- Run npm install to install the dependencies.
-- Run npm start to start the app.
+- Run `npm install` to install the dependencies.
+- Run `npm start` to start the app.
 
 ## Authors
 
