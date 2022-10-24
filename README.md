@@ -1,14 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Tv Shows App
+# Math Magicians
 
 > "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote.
 
 ## Built With
 
-- HTML
-- CSS
-- JavaScript
 - React
 
 ## Live Demo
@@ -29,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 - To clone my repository run this command `git clone https://github.com/karayamanemre/math-magicians.git`
 - Run npm install to install the dependencies.
-- Open the dist/index.html file with a browser.
+- Run npm start to start the app.
 
 ## Authors
 
