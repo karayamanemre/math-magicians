@@ -1,91 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate.js';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-    this.onClickHandler = this.onClickHandler.bind(this);
-  }
-  handleClick(e) {
-    this.setState((state) => calculate(state, e.target.innerText));
-  }
-  onClickHandler(e) {
-    this.setState((state) => calculate(state, e.target.innerText));
-  }
-  render() {
-    const { next, total, operation } = this.state;
-    return (
-      <div className="container">
-        <span className="display">
-          {total}
-          {operation}
-          {next}
-        </span>
-        <button className="clear" onClick={this.onClickHandler}>
-          AC
-        </button>
-        <button className="plus-minus" onClick={this.onClickHandler}>
-          +/-
-        </button>
-        <button className="percent" onClick={this.onClickHandler}>
-          %
-        </button>
-        <button className="operator divide" onClick={this.onClickHandler}>
-          ÷
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          7
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          8
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          9
-        </button>
-        <button className="operator multiply" onClick={this.onClickHandler}>
-          x
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          4
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          5
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          6
-        </button>
-        <button className="operator minus" onClick={this.onClickHandler}>
-          -
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          1
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          2
-        </button>
-        <button className="number" onClick={this.onClickHandler}>
-          3
-        </button>
-        <button className="operator plus" onClick={this.onClickHandler}>
-          +
-        </button>
-        <button className="number zero" onClick={this.onClickHandler}>
-          0
-        </button>
-        <button className="decimal" onClick={this.onClickHandler}>
-          .
-        </button>
-        <button className="operator equal" onClick={this.onClickHandler}>
-          =
-        </button>
-      </div>
-    );
-  }
-}
+const Calculator = () => {
+  const [state, setState] = useState({ total: 0, next: null, operation: null });
+  const onClickHandler = (e) => {
+    setState(() => calculate(state, e.target.innerText));
+  };
+  const { total, operation, next } = state;
+  return (
+    <div className="container">
+      <span className="display">
+        {total}
+        {operation}
+        {next}
+      </span>
+      <button className="clear" onClick={onClickHandler}>
+        AC
+      </button>
+      <button className="plus-minus" onClick={onClickHandler}>
+        +/-
+      </button>
+      <button className="percent" onClick={onClickHandler}>
+        %
+      </button>
+      <button className="operator divide" onClick={onClickHandler}>
+        ÷
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        7
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        8
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        9
+      </button>
+      <button className="operator multiply" onClick={onClickHandler}>
+        x
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        4
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        5
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        6
+      </button>
+      <button className="operator minus" onClick={onClickHandler}>
+        -
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        1
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        2
+      </button>
+      <button className="number" onClick={onClickHandler}>
+        3
+      </button>
+      <button className="operator plus" onClick={onClickHandler}>
+        +
+      </button>
+      <button className="number zero" onClick={onClickHandler}>
+        0
+      </button>
+      <button className="decimal" onClick={onClickHandler}>
+        .
+      </button>
+      <button className="operator equal" onClick={onClickHandler}>
+        =
+      </button>
+    </div>
+  );
+};
 
 export default Calculator;
