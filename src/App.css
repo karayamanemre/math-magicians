@@ -150,9 +150,6 @@ button:hover {
 
   .calculator {
     flex-direction: column;
-  }
-
-  .calculator {
     width: 90%;
   }
 }
