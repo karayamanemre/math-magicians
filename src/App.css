@@ -134,10 +134,13 @@ button:hover {
   }
 
   .nav-links {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  header,
+  header {
+    padding: 5px 25px;
+  }
+
   .home,
   .calculator,
   .quote {
@@ -145,7 +148,7 @@ button:hover {
   }
 
   .home p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .calculator {
