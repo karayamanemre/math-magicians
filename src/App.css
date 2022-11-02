@@ -71,14 +71,18 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 50px;
+  padding: 250px;
   gap: 25px;
 }
 
 .calculatorContainer {
   display: grid;
-  box-shadow: 5px 5px 15px #bebebe;
-  border: 2px solid #a2a8d3;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 4px,
+    rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 2px solid #113f67;
+  border-radius: 12px;
+  background-color: #a2a8d3;
+  padding: 5px;
 }
 
 .display {
@@ -88,22 +92,29 @@ h2 {
   height: 50px;
   grid-column-start: 1;
   grid-column-end: 5;
-  border: 0.5px solid #a2a8d3;
   background-color: #a2a8d3;
   color: #fff;
   padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 2px solid #113f67;
 }
 
 button {
   width: 90px;
   height: 50px;
   cursor: pointer;
-  border: 0.5px solid #a2a8d3;
+  border: 5px solid #a2a8d3;
   background: #e7eaf6;
+  border-radius: 12px;
 }
 
 button:hover {
-  filter: brightness(110%);
+  filter: brightness(105%);
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 .operator {
