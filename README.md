@@ -10,7 +10,7 @@
 
 ## Live Demo
 
--
+- [Math Magicians](https://mathmagicians-karayamanemre.netlify.app/)
 
 ## Getting Started
 
