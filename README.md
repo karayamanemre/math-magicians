@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> "Math Magicians" is a Single Page App (SPA) that allows users to make simple calculations, and read a random programmin/math-related joke.
+> "Math Magicians" is a Single Page App (SPA) that allows users to make simple calculations, and read a random programming/math-related joke.
 
 ## Built With
 
