@@ -7,7 +7,7 @@ describe('test for creating the header', () => {
     const view = render(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     expect(view).toMatchSnapshot();
   });

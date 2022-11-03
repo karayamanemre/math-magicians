@@ -6,7 +6,7 @@ const Home = () => (
     <p>
       "Math magicians" is a website for all fans of mathematics.<br></br>It is a
       Single Page App that allows users to make simple calculations, and read a
-      random math-related quote.
+      random programming/math-related joke. <br></br>Because why not?.
     </p>
   </div>
 );

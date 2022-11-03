@@ -71,7 +71,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 250px;
+  padding: 0 250px;
   gap: 25px;
 }
 
@@ -127,12 +127,26 @@ button:active {
   width: 180px;
 }
 
-.quote {
+.quote-container {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+}
+
+.quote {
+  display: flex;
+  width: 750px;
+  flex-direction: column;
+  padding: 50px 0;
   gap: 25px;
   font-size: 18px;
+}
+
+.quote-btn {
+  padding: 10px;
+  width: 200px;
+  font-size: 18px;
+  border: 2px solid #113f67;
+  outline: none;
 }
 
 @media screen and (max-width: 800px) {
