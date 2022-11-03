@@ -15,7 +15,7 @@ const Header = () => (
         </li>
         <li>|</li>
         <li>
-          <Link to="/quote">Quote</Link>
+          <Link to="/joke">Jokes</Link>
         </li>
       </ul>
     </nav>
