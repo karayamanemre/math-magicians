@@ -169,7 +169,7 @@ button:active {
   .home,
   .calculator,
   .quote {
-    padding: 25px;
+    padding: 20px;
   }
 
   .home p {
@@ -179,5 +179,14 @@ button:active {
   .calculator {
     flex-direction: column;
     width: 90%;
+  }
+
+  .quote {
+    width: 90%;
+    padding: 15px 0;
+  }
+
+  .quote-container {
+    padding: 0 15px;
   }
 }
