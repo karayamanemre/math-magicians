@@ -3,7 +3,7 @@ import useFetch from '../useFetch';
 
 function Joke() {
   const { data, loading, error, reFetch } = useFetch(
-    'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart',
+    'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,political,racist,explicit&type=twopart',
   );
   if (loading) {
     return <h2>Loading...</h2>;
