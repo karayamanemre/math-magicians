@@ -19,7 +19,7 @@ function Joke() {
         </p>
       </section>
       <button className="quote-btn" onClick={reFetch}>
-        New Joke
+        Get a Joke
       </button>
     </div>
   );
